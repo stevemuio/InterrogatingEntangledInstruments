@@ -1,0 +1,14 @@
+[
+	{
+	"class":"CubicHotspot",
+	"id":"e",
+	"position":[-80,30,-80],
+	"dimensions":[180,180,180],
+
+	"events":{
+		"enter":[{"addr":"enabled","data":1}],
+		"within":[{"addr":"vrx","data":"$velrx"},{"addr":"vry","data":"$velry"},{"addr":"vrz","data":"$velrz"}],
+		"exit":[{"addr":"enabled","data":0}]
+		}
+	}
+]

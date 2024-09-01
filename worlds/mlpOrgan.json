@@ -1,0 +1,18 @@
+[
+	{"class":"UDPConfigs", "configs":[{"port": 7400}]},
+	{
+	"class":"MLPregressorHotspot",
+	"id":"mlp",
+	"position":[-100,30,-100],
+	"dimensions":[200,180,200],
+		"controller": ["rightPos","leftPos"],
+		"inout": [6,16],
+		"hidden": [24,24],
+		"trainpoints" : 10,
+	"events":{
+		"enter":[{"addr":"active","data":1}],
+		"withinmlp": "n/",
+		"exit":[{"addr":"active","data":0}]
+		}
+	}
+]

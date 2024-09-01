@@ -1,0 +1,39 @@
+[
+	{
+	"class":"SphericHotspot",
+	"id":"l",
+	"position":[-50,100, 0],
+	"radius":100,
+		"controller": "midPos",
+
+	"events":{
+		"enter":[{"addr":"active","data":1}],
+		"within":[{"addr":"rx","data":["$rx"]},{"addr":"ry","data":["$ry"]},{"addr":"rz","data":["$rz"]},
+					{"addr":"rpitch","data":["$rpitch"]},{"addr":"ryaw","data":["$ryaw"]},{"addr":"rdistance","data":["$rdistance"]}],
+		"exit":[{"addr":"active","data":0}]
+		}
+	},
+	{
+	"class":"SphericHotspot",
+	"id":"r",
+	"position":[50,100, 0],
+	"radius":100,
+		"controller": "midPos",
+
+	"events":{
+		"enter":[{"addr":"active","data":1}],
+		"within":[{"addr":"rx","data":["$rx"]},{"addr":"ry","data":["$ry"]},{"addr":"rz","data":["$rz"]},
+					{"addr":"rpitch","data":["$rpitch"]},{"addr":"ryaw","data":["$ryaw"]},{"addr":"rdistance","data":["$rdistance"]}],
+		"exit":[{"addr":"active","data":0}]
+		}
+	},
+	{
+		"class":"ButtonEvent",
+	"id":"b",
+		"events":{
+		"pressed":[{"addr":"state","data":1}],
+		"click":[{"min":0,"max":450,"addr":"short","data":0},{"min":450,"max":6000,"addr":"long","data":0}],
+		"released":[{"addr":"state","data":0}]
+		}
+	}
+]

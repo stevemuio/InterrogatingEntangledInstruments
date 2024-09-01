@@ -1,0 +1,24 @@
+[
+	{
+	"class":"CubicHotspot",
+	"id":"e",
+	"position":[-100,30,-100],
+	"dimensions":[200,180,200],
+		"controller": "midPos",
+
+	"events":{
+		"enter":[{"addr":"active","data":1}],
+		"within":[{"addr":"rx","data":"$rx"},{"addr":"ry","data":"$ry"},{"addr":"rz","data":"$rz"}],
+		"exit":[{"addr":"active","data":0}]
+		}
+	},
+	{
+		"class":"ButtonEvent",
+	"id":"b",
+		"events":{
+		"pressed":[{"addr":"state","data":1}],
+		"click":[{"min":0,"max":450,"addr":"short","data":0},{"min":450,"max":6000,"addr":"long","data":0}],
+		"released":[{"addr":"state","data":0}]
+		}
+	}
+]

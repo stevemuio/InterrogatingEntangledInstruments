@@ -1,0 +1,16 @@
+[
+	{"class":"UDPConfigs", "configs":[{"port": 57120}]},
+	{
+	"class":"CubicHotspot",
+	"id":"r",
+	"position":[-100,30,-100],
+	"dimensions":[200,180,200],
+		"controller": "rightPos",
+
+	"events":{
+		"enter":[{"addr":"enabled","data":1}],
+		"within":[{"addr":"rx","data":["$rx"]},{"addr":"ry","data":["$ry"]},{"addr":"rz","data":["$rz"]}],
+		"exit":[{"addr":"enabled","data":0}]
+		}
+	}
+]
