@@ -1,7 +1,7 @@
 // **********************************
-// Perceptron-Organ
+// mlpOrgan
 // **********************************
-// See "MLP world documentation - PerceptronOrgan
+// See "MLP world documentation - mlpOrgan
 
 
 

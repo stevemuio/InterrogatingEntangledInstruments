@@ -1,0 +1,27 @@
+[
+	{"class":"UDPConfigs", "configs":[{"port": 7400}]},
+	{
+	"class":"MLPregressorHotspot",
+	"id":"mlp",
+	"position":[-150,30,-150],
+	"dimensions":[300,180,300],
+		"controller": ["rightPos","leftPos"],
+		"inout": [6,6],
+		"hidden": [18,8],
+		"trainpoints" : 10,
+	"events":{
+		"enter":[{"addr":"active","data":1}],
+		"withinmlp": "n/",
+		"exit":[{"addr":"active","data":0}]
+		}
+	},
+	{
+		"class":"ButtonEvent",
+	"id":"b",
+		"events":{
+		"pressed":[{"addr":"state","data":1}],
+		"click":[{"min":0,"max":450,"addr":"reloadfile","data":0}],
+		"released":[{"addr":"state","data":0}]
+		}
+	}
+]
