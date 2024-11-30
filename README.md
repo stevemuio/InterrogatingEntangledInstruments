@@ -14,6 +14,12 @@ Sections in this document:
 
 
 
+Data Server 
+====== ===
+
+http://192.168.10.10:8000
+
+
 
 
 
@@ -46,7 +52,7 @@ Setting-up
 
 Starting-up and network configuration
 -------------------------------------
-The Pi Zero takes a few minutes to start (this can seem like for ever!).  It automatically loads the Entangled GameTrak software.  It also starts a DHCP server and will allocate your laptop the IP 192.168.10.100.
+The Pi Zero takes a few minutes to start (this can seem like for ever!).  It automatically loads the Entangled GameTrak software.  It also starts a DHCP server and will allocate your laptop the IP 192.168.10.101.
 
 Check that you have your ethernet (or USB ethernet dongle) configured to DHCP.  This the default setting, so you will probably know if you have changed it.
 
